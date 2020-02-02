@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <title>Exercice of CRUD</title>
+    
+    <link rel="stylesheet" href="crud.css">
+    
+<script src="crud.js" type="text/javascript"></script>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">   
+    </head>
+    
+    <body>
+    
+        <div class="container">
+    <div class=" the_form left_data_input">
+        
+       <form class="form_input" onsubmit="event.preventDefault(); processData();" autocomplete="off">
+         <label id="message"></label>
+           <br>
+          <div>
+            <label>First Name: <span>*</span></label>
+           <input type="text" name="firstName" placeholder="Enter your name" id="fname"  >
+<!--           <span id="spanName" class="error hide"> name required</span>-->
+           </div>
+           
+           <br>
+         <div>
+           
+             <p>
+            <lable>LastName:<span>*</span></lable>
+           <input type="text" name="lastName" placeholder="Enter your last name" id="lname">
+<!--               <span id="spanLname" class="error hide"> Last name is required</span>-->
+        </p>
+           
+           
+           </div>
+           
+             
+           
+         <div>
+           
+           
+              <label>Sex:</label>
+        <input class="gender" type="radio" name="gender"  value="M" > <label>M</label>
+           <input  class="gender" type="radio" name="gender"  value="F" > <label>F</label>
+           
+           
+           </div>
+             <br>
+          
+           
+           <div>
+           
+             <label>DOB :<span>*</span></label>
+           <input type="date" name="dob"  id="dob" required><br>
+           <span id ="dob" class="error hide"></span>
+           
+           
+           </div>
+           
+           
+           <div>
+           <input style="float: right;" type="submit" value="Submit" >
+        </div>
+        
+        
+        </form>
+   
+        
+    </div>
+        
+        
+        <div class=" the_form right_data_input_result">
+                           
+            <table id="the_table">
+                   <thead>
+
+                      <tr>
+                         <th>First Name</th> 
+                       <th>Last Name</th>
+                          <th>Sex</th>
+                          <th>Date of Birth</th>
+                          <th></th>
+                    
+                          
+                    </tr>
+                        
+<!--
+                       <tr>
+                            <td> Raymond</td>
+                           <td> Damier</td>
+                           <td> M</td>
+                           <td> 10/30/1985</td>
+                           <td><a href="#">Edit</a>
+                            <a href="#">remove</a>
+                               <a href="#">Update</a>
+                           
+                           
+                           </td>
+                       </tr>
+-->
+                       
+                       <tbody>
+                
+                
+                        </tbody>
+
+                    </thead>
+
+
+                        </table>
+        
+    </div>
+    
+    </div>
+        
+        
+    </body>
+</html>

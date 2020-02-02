@@ -1,0 +1,105 @@
+.container::after{
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.the_form{
+    
+    float: left;
+    width: 100%;
+    border: 1px solid black;
+    height: 350px;
+}
+
+.left_data_input{
+    width: 45%;
+    border-right: none;
+    position: relative;
+}
+
+.right_data_input_result{
+    width: 50%;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}
+table tr:nth-child(odd){
+   background: #D0E4F5;
+}
+.form_input{
+    
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    top: 50%;
+    left: 50%;
+    width: 90%;
+   height: 300px;
+  
+    box-sizing: border-box;
+   
+}
+input[type="text"]{
+    
+    float: right;
+}
+
+input[type="submit"]{
+    
+ border-radius: 5px;
+    margin-top: 25px;
+}
+
+input[type="submit"]:hover{
+    
+   background-color: lightblue;
+    color:white;
+}
+
+#fname:valid{
+    border: 1px solid gray;
+}
+#fname:invalid{
+    border: 1px solid red;
+}
+
+#lname:valid{
+    border: 1px solid gray;
+}
+#lname:invalid{
+    border: 1px solid red;
+}
+
+#dob:valid{
+    border: 1px solid gray;
+}
+#dob:invalid{
+    border: 1px solid red;
+}
+
+input[type="date"]{
+    
+    float: right;
+}
+input:focus{
+    background:#AAAAAA;
+    color: red;
+}
+span{
+    color:red;
+}
+#message{
+    text-align: center;
+    color: red;
+}
+.hide{
+    display:none;
+ 
+}
+
+.error{
+       text-align: center;
+    color: red;
+}
